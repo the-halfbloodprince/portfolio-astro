@@ -46,7 +46,7 @@
 
 	.projects__title {
 		font-size: 5rem;
-		color: #6D28D9;
+		color: #6A26CD;
 	}
 
 	.projects__container {

@@ -13,15 +13,15 @@ import { CodeIcon } from '@heroicons/react/solid'
 //         <div className="h-screen flex ">
 //             <div className="h-5/6 w-1/2 flex flex-col justify-center">
 //                 <p className="text-3xl">Hi there, I am</p>
-//                 <p className="text-6xl text-purple-500 font-bold">Enmu</p>
+//                 <p className="text-6xl text-accent font-bold">Enmu</p>
 //                 <p className="text-xl my-10 w-full">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit possimus quod ad natus repudiandae est numquam asperiores nemo accusamus, commodi mollitia adipisci dolor sed provident soluta suscipit, rem earum porro harum ipsa saepe velit distinctio molestias eaque? Soluta, quis laborum!</p>
 //                 <div className="flex space-x-2">
-//                     <div className="py-2 px-4 text-sm text-white rounded-full bg-purple-500">Full Stack Web Developer</div>
-//                     <div className="py-2 px-4 text-sm text-white rounded-full bg-purple-500">UI/UX Designer</div>
-//                     <div className="py-2 px-4 text-sm text-white rounded-full bg-purple-500">WebGL Dev</div>
+//                     <div className="py-2 px-4 text-sm text-white rounded-full bg-accent">Full Stack Web Developer</div>
+//                     <div className="py-2 px-4 text-sm text-white rounded-full bg-accent">UI/UX Designer</div>
+//                     <div className="py-2 px-4 text-sm text-white rounded-full bg-accent">WebGL Dev</div>
 //                 </div>
 //             </div>
-//                 <div id="profilePic1" className="w-1/2 h-5/6 bg-purple-500">
+//                 <div id="profilePic1" className="w-1/2 h-5/6 bg-accent">
 //                     <img className="object-contain w-full h-full transform -translate-x-6 hover:-translate-x-0 transition-all duration-500 " src="/profilePic.png" alt="" />
 //                 </div>
 //         </div>
@@ -37,20 +37,20 @@ function Intro() {
                 <div className="flex w-full">
                     <div className=" w-full">
 						<img src="/assets/my_image_purple_blob.png" class="w-32 inline-block absolute right-10  md:hidden z-0" alt="" />
-                        <p className="text-3xl lg:text-3xl text-purple-400">Hi there, I am</p>
-                        <p className="text-7xl lg:text-8xl text-purple-700 custom-underline">Manish</p>
+                        <p className="text-3xl lg:text-3xl text-accent-2">Hi there, I am</p>
+                        <p className="text-7xl lg:text-8xl text-accent custom-underline">Manish</p>
                         <p className="text-xl md:text-sm mt-8 lg:text-lg xl:text-xl z-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit possimus quod ad natus repudiandae est numquam asperiores nemo accusamus, commodi mollitia adipisci dolor sed provident soluta suscipit, rem earum porro harum ipsa saepe velit distinctio molestias eaque? Soluta, quis laborum!</p>
                     </div>
                 </div>
                 <div className="space-x-3 mt-12 hidden lg:flex">
-                        <div className="py-2 my-1 whitespace-nowrap px-4 text-md lg:text-xs text-white rounded-full bg-purple-500">Full Stack Web Developer</div>
-                        <div className="py-2 my-1 whitespace-nowrap px-4 text-md lg:text-xs text-white rounded-full bg-purple-500">UI/UX Designer</div>
-                        <div className="py-2 my-1 whitespace-nowrap px-4 text-md lg:text-xs text-white rounded-full bg-purple-500">WebGL Dev</div>
+                        <div className="py-2 my-1 whitespace-nowrap px-4 text-md lg:text-xs text-white rounded-full bg-accent-2">Full Stack Web Developer</div>
+                        <div className="py-2 my-1 whitespace-nowrap px-4 text-md lg:text-xs text-white rounded-full bg-accent-2">UI/UX Designer</div>
+                        <div className="py-2 my-1 whitespace-nowrap px-4 text-md lg:text-xs text-white rounded-full bg-accent-2">WebGL Dev</div>
                 </div>
                 <div className="flex space-x-3 mt-12 lg:hidden">
-                        <div className="py-2 my-1 whitespace-nowrap px-4 text-md lg:text-xs text-white rounded-full bg-purple-500"><CodeIcon class="w-7" /></div>
-                        <div className="py-2 my-1 whitespace-nowrap px-4 text-md lg:text-xs text-white rounded-full bg-purple-500"><CodeIcon class="w-7" /></div>
-                        <div className="py-2 my-1 whitespace-nowrap px-4 text-md lg:text-xs text-white rounded-full bg-purple-500"><CodeIcon class="w-7" /></div>
+                        <div className="py-2 my-1 whitespace-nowrap px-4 text-md lg:text-xs text-white rounded-full bg-accent-2"><CodeIcon class="w-7" /></div>
+                        <div className="py-2 my-1 whitespace-nowrap px-4 text-md lg:text-xs text-white rounded-full bg-accent-2"><CodeIcon class="w-7" /></div>
+                        <div className="py-2 my-1 whitespace-nowrap px-4 text-md lg:text-xs text-white rounded-full bg-accent-2"><CodeIcon class="w-7" /></div>
                 </div>
                 <div className="flex space-x-5 mt-3 ml-2 lg:hidden">
                     <div><a href="#"><FontAwesomeIcon icon={faGithub} className="text-2xl w-8 transition-all duration-300 transform" /></a></div>

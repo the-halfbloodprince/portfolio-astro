@@ -4,23 +4,27 @@
 </script>
 
 <div class="container">
+	<!-- The faded number to the extreme -->
 	<div class="number">
 		{id}
 	</div>
+	<!-- The image -->
 	<div class="image">
+		<!-- Animating bg border -->
 		<div class="outerBox">
+			<!-- The actual image -->
 			<div class="innerBox">
 			</div>
 		</div>
 	</div>
 	<div class="content">
-		<h1 class="">
-			{title}
+		<h1 class="heading">
+			<span class="text">{title}</span>
 			<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
 			</svg>
 		</h1>
-		<p>{description}</p>
+		<p class="descr">{description}</p>
 		<div class="tech-used">
 			<!-- <img class="tech-logo" src="/assets/nextdotjs.svg" alt="" />
 			<img class="tech-logo" src="/assets/tailwindcss.svg" alt="" />
@@ -77,6 +81,10 @@
 		background-size: cover;
 	}
 
+	.descr {
+		font-size: 1em;
+	}
+
 	.content {
 		margin: 0 auto ;
 		/* background: #12D531; */
@@ -106,6 +114,10 @@
 		top: -12vh;
 		font-size: 50vh;
 		opacity: 0.1;
+	}
+
+	.heading > .text {
+		color: #6A26CD;
 	}
 
 
