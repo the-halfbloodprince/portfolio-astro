@@ -5,8 +5,30 @@
 			<h1>Front-End</h1>
 			<p v-for="skill in skills.frontend">{{skill}}</p>
 		</div>
+		<div class="button">
+		<button>
+			View full resume
+		</button>
+	</div>
 	</div>
 </template>
+
+<style>
+	.button {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	button {
+		padding: .6rem 1.5rem;
+		font-size: 1.1rem;
+		font-weight: 500;
+		background-color: white;
+		color: #22223B;
+		border-radius: 10px;
+	}
+</style>
 
 <script>
 	export default {

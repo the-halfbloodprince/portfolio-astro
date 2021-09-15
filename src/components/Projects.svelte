@@ -25,6 +25,11 @@
 			tech={['next.js', 'tailwindcss', 'react']}
 		/>
 	</div>
+	<div class="button">
+		<button>
+			See More
+		</button>
+	</div>
 </div>
 
 <style>
@@ -51,4 +56,20 @@
 		flex-direction: column;
 		justify-content: center;
 	}
+
+	.button {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	button {
+		padding: .6rem 1.5rem;
+		font-size: 1.1rem;
+		font-weight: 500;
+		background-color: white;
+		color: #22223B;
+		border-radius: 10px;
+	}
+
 </style>
