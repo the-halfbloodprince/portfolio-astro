@@ -19,6 +19,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@heroicons/react": "^1.0.3",
+    "gsap": "^3.7.1",
     "locomotive": "^0.4.2",
     "scroll": "^3.0.1"
   }

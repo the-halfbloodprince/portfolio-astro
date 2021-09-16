@@ -3,16 +3,24 @@
 		<h1 class="text-6xl text-accent">Resume</h1>
 		<h1 class="text-2xl text-white">{{catchPhrase}}</h1>
 		<div class="">
-			<p v-for="(_, cat, index) in resume">
-				<div class="categoryBox">
-					<div class="category">{{cat}}</div>
-				</div>
-				<div class="contentBox">
-					<div v-for="(content, _, index) in resume[cat]">
-						<div v-for="(details, _, index) in content">{{details}}</div>
+			<div v-for="(_, cat, index) in resume">
+				<div class="resumeCategoryBox">
+					<div class="categoryBox">
+						<div class="category">{{cat}}</div>
+					</div>
+					<div class="contentBox">
+						<div v-for="(content, _, index) in resume[cat]">
+							<div class="v">
+								<div v-for="(detail, _, index) in content">
+									<div v-if="cat === 'education' && _ === 'school' ">from <b>{{detail}}</b></div>
+									<div v-else-if="cat === 'experience' && _ === 'organisation' ">at <b>{{detail}}</b></div>
+									<div v-else>{{detail}}</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</p>
+			</div>
 		</div>
 		<div class="button">
 			<!-- <button>
@@ -23,6 +31,30 @@
 </template>
 
 <style>
+
+	.resumeCategoryBox {
+		display: flex;
+		width: 100%;
+		justify-content: flex-start;
+		margin-bottom: 2.5rem;
+	}
+
+	.categoryBox {
+		width: 40%;
+		text-transform: capitalize;
+		font-weight: bold;
+		font-size: 2rem;
+	}
+
+	.contentBox {
+		width: 60%;
+		font-size: 1.3rem;
+	}
+
+	.v {
+		margin-bottom: 1rem;
+	}
+
 	.button {
 		width: 100%;
 		display: flex;
@@ -42,7 +74,7 @@
 <script>
 	export default {
 		setup() {
-			const catchPhrase = "The Official Documentation"
+			const catchPhrase = "My Official Documentation"
 			const resume = {
 				education: [
 					{
@@ -56,7 +88,7 @@
 						courseDuration: "(2016-2018)",
 					}
 				],
-				experiences: [
+				experience: [
 					{
 						jd: "Software Development Intern (Full Stack)",
 						organisation: "Krishi Network",
