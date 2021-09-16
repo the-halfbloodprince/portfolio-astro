@@ -2,12 +2,35 @@
 	<div class="h-screen px-8 xl:px-0 py-16 relative flex flex-col justify-center space-y-8 resume">
 		<div class="text-6xl text-accent">{{title}}</div>
 		<div class="section1">
-			
+			<img class="img" src="assets/no.webp" />
+			<div class="text">
+				<div class="line1">“Life is not all about being a shinobi, it’s also about ramen”</div>
+				<div class="line2">- Uzumaki Dattebayo</div>
+			</div>
 		</div>
 	</div>
 </template>
 
 <style>
+
+	.section1 {
+		display: flex;
+		align-items: center;
+	}
+
+	.section1 > .text {
+		margin-left: 5rem;
+	}
+
+	.section1 > .text > .line1 {
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.section1 > .text > .line2 {
+		font-size: 1.2rem;
+		color: #999;
+	}
 
 </style>
 
