@@ -37,11 +37,12 @@
 		min-height: 100vh;
 		margin-right: 2rem;
 		/* width: 100vw; */
-		padding: 5rem 0;
+		/* padding: 3rem 0; */
 		display: flex;
 		flex-direction: column;
 		align-items: stretch;
 		/* background-color: #f22; */
+		margin-bottom: 0;
 	}
 
 	.projects__title {

@@ -1,5 +1,5 @@
 <template>
-	<div class="h-screen px-8 xl:px-0 py-16 relative flex flex-col justify-center space-y-8 resume">
+	<div class="min-h-screen px-8 xl:px-0 my-16 relative flex flex-col justify-center space-y-8 resume">
 		<h1 class="text-6xl text-accent">Resume</h1>
 		<h1 class="text-2xl text-white">{{catchPhrase}}</h1>
 		<div class="supreme">
@@ -14,10 +14,10 @@
 							<div class="v">
 								<div class="list-icon">
 									<div v-if="index2===0">
-										<img src="assets/latestExp.svg" class="list-icon" />
+										<img src="../../public/assets/latestExp.svg" class="list-icon" />
 									</div>
 									<div v-else>
-										<img src="assets/oldExp.svg" class="list-icon" />
+										<img src="../../public/assets/oldExp.svg" class="list-icon" />
 									</div>
 								</div>
 								<div class="list-content">
@@ -25,7 +25,7 @@
 										<div class="l1" v-if="index===0">{{detail}}</div>
 
 										<div class="l2" v-else-if="cat === 'education' && _ === 'school' ">from <span class="special">{{detail}}</span></div>
-										<div class="l2" v-else-if="cat === 'experience' && _ === 'organisation' ">at <span class="special">{{detail}}</span></div>
+										<div class="l2" v-else-if="_ === 'organisation' ">at <span class="special">{{detail}}</span></div>
 										<div class="l2" v-else>{{detail}}</div>
 									</div>
 								</div>
@@ -115,7 +115,7 @@
 		height: 100%;
 		width: 4px;
 		/* background-color: rgb(146, 109, 180); */
-		background:linear-gradient(to bottom,  rgb(146, 109, 180), #00041E);
+		background:linear-gradient(to bottom,  rgb(146, 109, 180), #00041E00);
 		position: absolute;
 		left: calc(35% + 1.5rem - 2px);
 		top: .5rem;
@@ -126,7 +126,7 @@
 	export default {
 		setup() {
 			const catchPhrase = "My Official Documentation"
-			const dummy = undefined;
+			// const latestSvg = import("../../public/assets/latestExp.svg")
 			const resume = {
 				education: [
 					{
@@ -150,6 +150,13 @@
 						jd: "Research Intern",
 						organisation: "SSERD",
 						jobDuration: "(Oct 2019-Nov 2019)",
+					},
+				],
+				volunteering: [
+					{
+						jd: "National Service Scheme (NSS)",
+						organisation: "IIT Kharagpur",
+						jobDuration: "(July 2019-Aug 2020)",
 					},
 				]
 			}

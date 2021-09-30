@@ -20,7 +20,7 @@
 				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
 			</svg>
 		</h1>
-		<p>{description}</p>
+		<p class="text">{description}</p>
 		<div class="tech-used">
 			<!-- <img class="tech-logo" src="/assets/nextdotjs.svg" alt="" />
 			<img class="tech-logo" src="/assets/tailwindcss.svg" alt="" />
@@ -86,6 +86,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
+		align-items: flex-end;
 	}
 
 	h1 {
@@ -112,6 +113,10 @@
 
 	.heading > .text {
 		color: #6A26CD;
+	}
+
+	.text {
+		text-align: right;
 	}
 
 

@@ -45,13 +45,13 @@ let title = 'Manish Kumar Das';
 </head>
 <body>
     <main class="px-0 md:px-16 lg:px-24 xl:pl-64 xl:pr-32">
-            <Header />
-            <Intro />
-            <LeftBar client:visible />
-            <About />
-            <Projects />
-            <Resume />
-            <Experiments />
+            <Header class="section" />
+            <Intro class="section" />
+            <LeftBar class="section" client:visible />
+            <About class="section" />
+            <Projects class="section" />
+            <Resume class="section" />
+            <Experiments class="section" />
         <!-- <Tour /> -->
 
         <!--
@@ -71,5 +71,7 @@ let title = 'Manish Kumar Das';
 </html>
 
 <style>
-
+	.section {
+		/* margin-top: 64px; */
+	}
 </style>
