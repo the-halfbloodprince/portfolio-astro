@@ -1,5 +1,5 @@
 <template>
-	<div class="h-screen px-8 xl:px-0 py-16 relative flex flex-col justify-center space-y-8 resume">
+	<div class="min-h-screen px-8 xl:px-0 py-16 relative flex flex-col justify-center space-y-8 resume">
 		<div class="text-6xl text-accent">{{title}}</div>
 		<div class="section1">
 			<img class="img" src="../../public/assets/no.webp" />

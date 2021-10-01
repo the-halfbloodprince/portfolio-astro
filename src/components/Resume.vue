@@ -1,6 +1,6 @@
 <template>
 	<div class="min-h-screen px-8 xl:px-0 my-16 relative flex flex-col justify-center space-y-8 resume">
-		<div class="flex align-baseline justify-between">
+		<div class="flex align-end justify-between">
 			<h1 class="text-6xl text-accent">
 				Resume
 			</h1>
@@ -152,7 +152,7 @@
 				],
 				experience: [
 					{
-						jd: "Lead Software Developer",
+						jd: "Software Developer",
 						organisation: "Artificial Brix",
 						jobDuration: "(Sept 2021-Present)",
 					},
