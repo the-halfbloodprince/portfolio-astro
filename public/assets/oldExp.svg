@@ -1,7 +1,1 @@
-<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
- <g>
-  <title>Layer 1</title>
-  <ellipse fill="#00041e" cx="387.1" cy="296.7" id="svg_2" rx="164.5" ry="164.5" stroke-width="60" stroke="#6a26cd"/>
- </g>
-
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600"><g><title>Layer 1</title><ellipse id="svg_2" cx="387.1" cy="296.7" fill="#00041e" stroke="#6a26cd" stroke-width="60" rx="164.5" ry="164.5"/></g></svg>
