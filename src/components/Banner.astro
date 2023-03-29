@@ -1,0 +1,21 @@
+---
+const { msg } = Astro.props
+---
+
+<div class="banner__main">
+	{ msg }
+</div>
+
+<style>
+	.banner__main {
+		--banner-bg: red;
+
+		width: 100vw;
+		height: 3rem;
+
+		background: var(--banner-bg);
+
+		display: grid;
+		place-items: center;
+	}
+</style>

@@ -1,6 +1,5 @@
 ---
-
-	// Component Imports
+// Component Imports
 // import Tour from '../components/Tour.astro';
 // You can import components from any supported Framework here!
 // import PreactCounter from '../components/PreactCounter.jsx';
@@ -8,55 +7,61 @@
 // import SvelteCounter from '../components/SvelteCounter.svelte';
 // import VueCounter from '../components/VueCounter.vue';
 
-import '/style/global.css'
-import Header from '../components/Header.astro';
+import "/style/global.css";
+import Header from "../components/Header.astro";
 // import Intro from '../components/Intro.svelte';
-import LeftBar from '../components/LeftBar.jsx';
-import Intro from '../components/Intro.jsx';
-import About from '../components/About.svelte';
-import Projects from '../components/Projects.svelte';
-import Resume from '../components/Resume.vue';
-import Experiments from '../components/Experiments.vue';
-import Contact from '../components/Contact.vue';
+import LeftBar from "../components/LeftBar.jsx";
+import Intro from "../components/Intro.jsx";
+import Banner from '../components/Banner.astro'
+import About from "../components/About.svelte";
+import Projects from "../components/Projects.svelte";
+import Resume from "../components/Resume.vue";
+import Experiments from "../components/Experiments.vue";
+import Contact from "../components/Contact.vue";
+// import RevealingText from '../components/animated/scrollingText.svelte'
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
 // It will run during the build, but never in the browser.
 // All variables are available to use in the HTML template below.
-let title = 'Manish Kumar Das';
+let title = "Manish Kumar Das";
+
+let bannerMsg = 'Site under construction. Please check again in a couple of days'
 
 // Full Astro Component Syntax:
 // https://github.com/snowpackjs/astro/blob/main/docs/core-concepts/astro-components.md
-
-
 ---
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{title}</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="stylesheet" href="/style/global.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{title}</title>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="/style/global.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
 
-    <style>
-    </style>
-</head>
-<body>
-    <main class="px-0 md:px-16 lg:px-24 xl:pl-64 xl:pr-32">
-            <Header class="section" />
-            <Intro class="section" />
-            <LeftBar class="section" client:visible />
-            <About class="section" />
-            <Projects class="section" />
-            <Resume class="section" />
-            <Experiments class="section" />
+		<style></style>
+	</head>
+	<body>
+		<Banner msg={bannerMsg} />
+		<main class="px-0 md:px-16 lg:px-16 xl:pl-64 xl:pr-32 relative">
+			<Header class="section" />
+			<Intro class="section" client:visible />
+			<LeftBar class="section" client:visible />
+			<About class="section" />
+			<Projects class="section" />
+			<Resume class="section" />
+			<Experiments class="section" />
 			<Contact class="section" />
-        <!-- <Tour /> -->
+			<!-- <Tour /> -->
 
-        <!--
+			<!--
            - You can also use imported framework components directly in your markup!
            -
            - Note: by default, these components are NOT interactive on the client.
@@ -64,16 +69,26 @@ let title = 'Manish Kumar Das';
            -
            - See https://github.com/snowpackjs/astro/blob/main/docs/core-concepts/component-hydration.md
            -->
-        <!-- <PreactCounter client:visible />
+			<!-- <PreactCounter client:visible />
         <ReactCounter client:visible />
         <SvelteCounter client:visible />
         <VueCounter client:visible /> -->
-    </main>
-</body>
-</html>
+		</main>
+	</body>
 
-<style>
-	.section {
-		/* margin-top: 64px; */
-	}
-</style>
+	<style is:global>
+		@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Unbounded:wght@200;300;400;500&display=swap");
+
+		.section {
+			/* margin-top: 64px; */
+		}
+
+		.done {
+			font-family: "Space Mono", monospace !important;
+			color: white;
+		}
+
+		.revealingText {
+		}
+	</style>
+</html>
