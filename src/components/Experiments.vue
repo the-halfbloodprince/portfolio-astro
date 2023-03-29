@@ -8,14 +8,14 @@
 				<div class="line2">- Uzumaki Dattebayo</div>
 			</div>
 		</div>
-		<div class="section2">
+		<!-- <div class="section2">
 			<div v-for="exp in experiments">
 				<img src={{exp[pic]}} alt={{exp[title]}}>
 				<h1>{{exp['title']}}</h1>
 				<p>{{exp['whatIsIt']}}</p>
 				<p>{{exp['description']}}</p>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </template>
 
@@ -49,13 +49,13 @@
 			const catchPhrase = "My Official Documentation"
 			const experiments = [
 				{
-					pic: 'assets/tailwindcss.svg',
+					pic: '/assets/tailwindcss.svg',
 					title: 'Gentree',
 					whatIsIt: 'Project Visualisation Tool',
 					description: 'It is a simple command line tool that generates a structure.md containing a tree representation of the chosen directory.'
 				},
 				{
-					pic: 'assets/tailwindcss.svg',
+					pic: '/assets/tailwindcss.svg',
 					title: 'Wild Flower',
 					whatIsIt: 'VS Code Theme',
 					description: 'It is a red themed VS Code theme with a material look with occassional splashes of purple.'
